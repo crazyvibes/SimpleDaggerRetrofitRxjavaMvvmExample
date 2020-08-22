@@ -30,4 +30,29 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //Dagger
+    def dagger="2.23.2"
+    implementation "com.google.dagger:dagger:$dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger"
+
+
+
+
+    // ViewModel and LiveData
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    //Retrofit
+    def retrofit="2.6.0"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+
+    //RxJava
+    def RxJava="3.0.0"
+    def RxAndroid="3.0.0"
+    implementation "io.reactivex.rxjava3:rxandroid:$RxAndroid"
+    implementation "io.reactivex.rxjava3:rxjava:$RxJava"
+
 }
