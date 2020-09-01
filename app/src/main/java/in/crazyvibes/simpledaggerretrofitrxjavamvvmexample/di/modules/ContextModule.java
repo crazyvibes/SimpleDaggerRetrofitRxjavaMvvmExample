@@ -10,7 +10,6 @@ import dagger.Module;
 public abstract class ContextModule {
     private final Context context;
 
-
     public ContextModule(Context context) {
         this.context = context;
     }
